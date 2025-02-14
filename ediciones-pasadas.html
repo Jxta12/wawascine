@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Ediciones Pasadas - Festival Wawas al Cine" name="author">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="icon" href="./assets/wawas.png" type="image/png">
+  <title>Ediciones Pasadas - Festival Wawas al Cine</title>
+  <link href="./main.d8e0d294.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+        
+
+<body class="">
+
+  <div class="background-color-layer" style="background-image: url('assets/images/img-00.png')"></div>
+  <main class="content-wrapper">
+    <header class="white-text-container section-container">
+      <button onclick="window.location.href='index.html'" class="btn btn-primary" style="position: absolute; top: 20px; right: 20px;">
+        Volver al Inicio
+      </button>
+      <div class="text-center" style="margin: 0;">
+        <img src="./assets/wawas.png" alt="Logo del Festival Wawas al Cine" style="width: 200px; height: auto; margin-bottom: 5px;" class="fade-in"> 
+        <h1 style="margin: 0;">Festival Wawas al Cine</h1>
+        <p style="margin: 5px 0;">Cine para niños y adolescentes</p>
+        <p style="margin: 5px 0;">
+          <a href="https://www.facebook.com/profile.php?id=100049166961792" target="_blank"><i class="fab fa-facebook-f fa"></i></a>
+          <a href="https://www.instagram.com/festivalwawasalcine/" target="_blank"><i class="fab fa-instagram fa"></i></a>
+          <a href="https://www.youtube.com/@FestivalInfantilJuvenilWawasal" target="_blank"><i class="fab fa-youtube fa"></i></a>
+          <a href="https://www.tiktok.com/@wawas_al_cine" target="_blank"><i class="fab fa-tiktok fa"></i></a>        
+        </p>
+        <!-- Añadido el título adicional aquí -->
+        <h1 style="margin: 10px 0 0; font-size: 24px;">EDICIONES PASADAS WAWAS AL CINE</h1>
+      </div>
+    </header>
+    
+        
+
+    <div class="container">
+      <!-- Botones de años -->
+      <div class="years-buttons text-center" style="margin: 20px;">
+        <button class="btn btn-outline-primary" onclick="mostrarEdicion(2015)">2015</button>
+        <button class="btn btn-outline-primary" onclick="mostrarEdicion(2016)">2016</button>
+        <button class="btn btn-outline-primary" onclick="mostrarEdicion(2017)">2017</button>
+        <button class="btn btn-outline-primary" onclick="mostrarEdicion(2018)">2018</button>
+        <button class="btn btn-outline-primary" onclick="mostrarEdicion(2019)">2019</button>
+        <button class="btn btn-outline-primary" onclick="mostrarEdicion(2020)">2020</button>
+        <button class="btn btn-outline-primary" onclick="mostrarEdicion(2021)">2021</button>
+        <button class="btn btn-outline-primary" onclick="mostrarEdicion(2022)">2022</button>
+        <button class="btn btn-outline-primary" onclick="mostrarEdicion(2023)">2023</button>
+      </div>
+
+      <!-- Contenido dinámico -->
+      <div id="contenido-edicion" class="row">
+        <div class="col-md-6 text-center">
+          <img id="imagen-edicion" src="./assets/images/edicion2015.jpg" alt="Edición 2015" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-block">
+              <h2 id="titulo-edicion">Primera Edición del Festival</h2>
+              <p id="descripcion-edicion"><b>Descripción:</b> Primera edición realizada del 15 al 19 de junio, enfocada en derechos de niños y jóvenes al acceso al cine como herramienta educativa.</p>
+              <p id="lugar-edicion"><b>Lugar:</b> Auditorio del GAD Provincial de Chimborazo.</p>
+              <p id="participantes-edicion"><b>Participantes:</b> U.E. Pedro Vicente Maldonado, U.E. 5 de Junio, U.E. Edmundo Chiriboga, Comunidad Cacha Obraje.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="btnScrollToTop" class="scroll-to-top">
+      &#9650;
+    </button>
+  </main>
+
+  <footer class="footer-container white-text-container text-center">
+    <div class="container">
+      <div class="row">
+        <!-- Página web -->
+        <div class="col-md-4 mb-3">
+          <p>
+            <a href="https://wawasalcine.fundacionartenativo.org/" target="_blank">
+              <i class="fas fa-globe"></i> www.wawasalcine.fundacionartenativo.org
+            </a>
+          </p>
+        </div>
+        <!-- Teléfonos -->
+        <div class="col-md-4 mb-3">
+          <p>
+            <i class="fas fa-phone"></i> 
+            Celular: +593 0982985389 - 0992774388<br>
+            Convencional: 032 610 215
+          </p>
+        </div>
+        <!-- Correo electrónico -->
+        <div class="col-md-4 mb-3">
+          <p>
+            <i class="fas fa-envelope"></i> 
+            <a href="mailto:festivalwawasalcine@gmail.com">festivalwawasalcine@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Dirección -->
+        <div class="col-md-12">
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 
+            Dirección: Avenida Edelberto Bonilla Oleas & Puruhá, Riobamba-Ecuador
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>&copy; 2025 Festival Wawas al Cine. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script type="text/javascript" src="./main.bc58148c.js"></script>
+
+  <!-- JavaScript para actualizar contenido -->
+  <script>
+    // Datos de las ediciones
+    const ediciones = {
+      2015: {
+        titulo: "Primera Edición del Festival",
+        descripcion: "Primera edición realizada del 15 al 19 de junio, enfocada en derechos de niños y jóvenes al acceso al cine como herramienta educativa.",
+        lugar: "Auditorio del GAD Provincial de Chimborazo.",
+        participantes: "U.E. Pedro Vicente Maldonado, U.E. 5 de Junio, U.E. Edmundo Chiriboga, Comunidad Cacha Obraje.",
+        imagen: "./assets/images/edicion2015.jpg"
+      },
+      2016: {
+        titulo: "Segunda Edición del Festival",
+        descripcion: "Segunda edición del 8 al 10 de junio. Incluyó cineclubes en varias unidades educativas con el apoyo de voluntarios internacionales.",
+        lugar: "Teatrino de la U.E. Pedro Vicente Maldonado.",
+        participantes: "U.E. Miguel Ángel León, U.E. 11 de Noviembre.",
+        imagen: "./assets/images/edicion2016.jpg"
+      },
+      2017: {
+        titulo: "Festival en Expansión",
+        descripcion: "Tercera edición del 13 al 18 de junio. Destacó la colaboración con empresas como Delpyg S.A y Grupo CEAS.",
+        lugar: "Varias unidades educativas y comunidades indígenas.",
+        participantes: "Camilo Gallegos, Pedro Vicente Maldonado, Miguel Ángel León, La Moya.",
+        imagen: "./assets/images/edicion2017.jpg"
+      },
+      2018: {
+        titulo: "Cine al Aire Libre",
+        descripcion: "Cuarta edición del 11 al 16 de junio. Se extendió a comunidades indígenas como Cacha Obraje y Cacha Shilpalá.",
+        lugar: "Coliseo del Colegio Salesianos.",
+        participantes: "UE Salesianos, UE Miguel Ángel León.",
+        imagen: "./assets/images/edicion2018.jpg"
+      },
+      2019: {
+        titulo: "Talentos Juveniles",
+        descripcion: "Quinta edición con la participación de más de 3500 niños de 9 unidades educativas.",
+        lugar: "San Vicente de Paúl, Juan de Velasco, Riobamba, Pedro Vicente Maldonado.",
+        participantes: "3500 niños de 9 unidades educativas.",
+        imagen: "./assets/images/edicion2019.jpg"
+      },
+      2020: {
+        titulo: "Festival Virtual",
+        descripcion: "Sexta edición adaptada al formato virtual debido a la pandemia. Participaron 23 películas de 11 países.",
+        lugar: "Virtual y presencial en la Comunidad La Moya.",
+        participantes: "23 películas de 11 países.",
+        imagen: "./assets/images/edicion2020.jpg"
+      },
+      2021: {
+        titulo: "Resiliencia en el Arte",
+        descripcion: "Séptima edición que incluyó talleres de cine en comunidades indígenas como Quilitagua y Cacha Shilpalá.",
+        lugar: "Unión Base, Pastaza.",
+        participantes: "Comunidades indígenas Quilitagua y Cacha Shilpalá.",
+        imagen: "./assets/images/edicion2021.jpg"
+      },
+      2022: {
+        titulo: "Festival Presencial",
+        descripcion: "Octava edición con 2914 participantes, 4 unidades educativas y 3 comunidades.",
+        lugar: "Riobamba y comunidades indígenas.",
+        participantes: "2914 participantes.",
+        imagen: "./assets/images/edicion2022.jpg"
+      },
+      2023: {
+        titulo: "Diversidad Cultural",
+        descripcion: "Novena edición con 4542 beneficiarios. Incluyó proyecciones itinerantes en teatros y comunidades indígenas.",
+        lugar: "Riobamba, U.E. Puruwa, Comunidad San Martín.",
+        participantes: "4542 beneficiarios.",
+        imagen: "./assets/images/edicion2023.jpg"
+      }
+    };
+    
+    function mostrarEdicion(anio) {
+      const ed = ediciones[anio];
+      document.getElementById("titulo-edicion").innerText = ed.titulo;
+      document.getElementById("descripcion-edicion").innerHTML = `<b>Descripción:</b> ${ed.descripcion}`;
+      document.getElementById("lugar-edicion").innerHTML = `<b>Lugar:</b> ${ed.lugar}`;
+      document.getElementById("participantes-edicion").innerHTML = `<b>Participantes:</b> ${ed.participantes}`;
+      document.getElementById("imagen-edicion").src = ed.imagen;
+    }
+  </script>
+  <script>const btnScrollToTop = document.getElementById('btnScrollToTop');
+
+    // Mostrar el botón cuando se hace scroll hacia abajo
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) { // Aparece después de 300 píxeles de desplazamiento
+        btnScrollToTop.classList.add('show');
+        btnScrollToTop.classList.remove('hide');
+      } else {
+        btnScrollToTop.classList.remove('show');
+        btnScrollToTop.classList.add('hide');
+      }
+    });
+    
+    // Al hacer clic, desplazar hacia arriba suavemente
+    btnScrollToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });</script>
+</body>
+</html>
